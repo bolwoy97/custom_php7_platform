@@ -7,5 +7,6 @@ upload/*
 !upload/news/.gitkeep
 !upload/verification/.gitkeep
 !upload/.gitkeep
+!upload/db
 
 components/ENV.php
