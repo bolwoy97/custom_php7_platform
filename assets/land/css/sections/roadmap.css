@@ -1,0 +1,271 @@
+.roadmap {
+    background: url(../../image/bg-problem.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    margin:0;
+    margin-top: -80px;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+.roadmap__wrap {
+    padding:120px 15px 100px 15px;
+}
+
+.roadmap__title {
+    color:white;
+    padding: 0 15px;
+}
+
+.roadmap__title_line {
+    margin: 15px 0 15px 15px;
+}
+
+.roadmap__description {
+    color:#fff;padding: 0 15px;
+}
+
+.roadmap__content {
+    justify-content: flex-start; 
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.roadmap__item {
+    position: relative;
+    padding: 15px;
+    font-size: 10px;
+    width: 40% !important;
+    flex-basis: 40% !important;
+    margin-bottom: 25px;
+    margin-top:0px;
+}
+
+.roadmap__item:nth-child(1n)  {
+    order:1;
+}
+.roadmap__item:nth-child(2n) {
+    order:4;
+}
+.roadmap__item:nth-child(3n) {
+    order:5;
+}
+.roadmap__item:nth-child(4n) {
+    order:10;
+}
+.roadmap__item:nth-child(5n) {
+    order:10;
+}
+.roadmap__item:nth-child(6n) {
+    order:10;
+}
+.roadmap__item:nth-child(7n) {
+    order:2;
+}
+.roadmap__item:nth-child(8n) {
+    order:3;
+}
+.roadmap__item:nth-child(9n) {
+    order:6;
+}
+.roadmap__item:nth-child(10n) {
+    order:9;
+}
+
+.roadmap__item:nth-child(4n) .roadmap__item_bridge,
+.roadmap__item:nth-child(2n) > .roadmap__item_bridge {
+    position: absolute;top:35px;left:-39px;z-index: 1;
+}
+
+.roadmap__item:nth-child(1n) .roadmap__item_bridge,
+.roadmap__item:nth-child(6n) .roadmap__item_bridge
+{
+    position: absolute;top:35px;right:-39px;z-index: 1;
+}
+
+.roadmap__item:nth-child(7n) .roadmap__item_bridge,
+.roadmap__item:nth-child(8n) .roadmap__item_bridge,
+.roadmap__item:nth-child(9n) .roadmap__item_bridge:nth-child(1n)
+{
+    position: absolute;top:107%;left:35%;z-index: 1;
+}
+
+.roadmap__item:nth-child(8n) .roadmap__item_bridge img:nth-child(1n),
+.roadmap__item:nth-child(7n) .roadmap__item_bridge img,
+.roadmap__item:nth-child(9n) .roadmap__item_bridge:nth-child(1n) img
+{
+    transform: rotate(90deg);
+}
+
+.roadmap__item::last-child .roadmap__item_bridge
+{   
+    position: absolute;
+    top:107%;
+    right:25%;
+    z-index: 1;
+}
+
+.roadmap__item_desc {
+    max-height: inherit !important;
+    min-height: 70px;
+    position: relative;
+    color:#000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    position:relative;
+    z-index: 2;
+}
+
+.roadmap__item_desc img {
+    width: 20px;
+    float: left;
+    margin-right: 15px;
+}
+
+.roadmap__item_title {
+    color: #09B580;
+    font-size: 12px;
+}
+
+.disabled .roadmap__item_title {
+    color: #C6C6C6;
+}
+
+.roadmap__item_text {
+    margin-top: 15px;
+    max-width: 70%;
+}
+
+.disabled .roadmap__item_text {
+    color: #D4D4D4;
+}
+
+.roadmap__item_date {
+    text-align: right;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.disabled .roadmap__item_date {
+    color:#6C6C6C;
+}
+
+.bridge-d {
+    display: none;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1240px) {
+    .bridge-d {
+        display: block;
+        width: 70%;
+    }
+    .bridge-m {
+        display: none;
+    }
+    .roadmap__content {
+        display: flex !important;
+       flex-direction: row !important; /*Пункты внутри контейнера будут располагаться горизонтально*/
+       align-items: stretch !important;
+       padding-top:0;
+    }
+    .roadmap__item {
+        position: relative;
+        padding: 15px;
+        font-size: 10px;
+        width: calc(100% / 6) !important;
+        flex-basis: calc(100% / 6) !important;
+        margin-bottom: 30px;
+        margin-top:50px;
+    }
+    .roadmap__item_small {
+        position: relative;
+        padding: 15px;
+        font-size: 10px;
+        width: calc(100% / 14) !important;
+        flex-basis: calc(100% / 14) !important;
+        margin-bottom: 30px;
+    }
+    .roadmap__item:nth-child(1n)  {
+    order:1;
+    }
+    .roadmap__item:nth-child(2n) {
+        order:2;
+    }
+    .roadmap__item:nth-child(3n) {
+        order:3;
+    }
+    .roadmap__item:nth-child(4n) {
+        order:4;
+    }
+    .roadmap__item:nth-child(5n) {
+        order:5;
+    }
+    .roadmap__item:nth-child(6n) {
+        order:6;
+    }
+    .roadmap__item:nth-child(7n) {
+        order:7;
+    }
+    .roadmap__item:nth-child(8n) {
+        order:8;
+    }
+    .roadmap__item:nth-child(9n) {
+        order:9;
+    }
+    .roadmap__item:nth-child(10n) {
+        order:10;
+    }
+    .roadmap__item:nth-child(1n) .roadmap__item_bridge,
+    .roadmap__item:nth-child(4n) .roadmap__item_bridge 
+    {
+        position: absolute;top:27%;right:-16%;z-index: 1;
+    }
+    .roadmap__item:nth-child(2n) .roadmap__item_bridge {
+        position: absolute;top:27%;left:45%;z-index: 1;width: 70%;
+    }
+    .roadmap__item:nth-child(2n) .roadmap__item_bridge img {
+        transform: none;
+    }
+    
+    .roadmap__item:nth-child(3n) .roadmap__item_bridge
+    {
+        position: absolute;top:27%;right:-14%;z-index: 1;
+    }
+    .roadmap__item:nth-child(7n) .roadmap__item_bridge img,
+    .roadmap__item:nth-child(8n) .roadmap__item_bridge img,
+    .roadmap__item:nth-child(9n) .roadmap__item_bridge img
+    {
+        transform: rotate(90deg);
+    }
+    .roadmap__item:nth-child(10n) .roadmap__item_bridge img
+    {
+        transform: rotate(180deg);
+    }
+
+    .roadmap__item:nth-child(7n) .roadmap__item_bridge, 
+    .roadmap__item:nth-child(8n) .roadmap__item_bridge,
+    .roadmap__item:nth-child(9n) .roadmap__item_bridge
+    {
+        position: absolute;top:-55% !important;
+        left: 45% !important;
+        z-index: 1;
+    }
+    .roadmap__item:nth-child(10n) .roadmap__item_bridge
+    {
+        position: absolute;top:-51%;left:5% !important;z-index: 1;
+    }
+}

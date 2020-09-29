@@ -1,0 +1,384 @@
+
+header.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 20px 0;
+}
+
+header.header .flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header.header .header-menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+header.header ul {
+	display: inline-block;
+}
+header.header ul li {
+	display: inline-block;
+	margin-right: 17px;
+}
+
+header.header ul li a {
+	text-decoration: none;
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	color: #000000;
+	padding: 4px;
+}
+
+.btn-white {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 10px 32px;
+
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 110%;
+	color: #1B1B1B;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-green {
+	background: linear-gradient(180deg, #05BB74 0%, #1298AE 100%), #249BB9;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 32px;
+
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 110%;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header.header .btn-login,
+header.header .btn-reg {
+	margin-right: 20px;
+}
+
+header.header .lang {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.white-popup-block {
+	margin: 0 auto;
+}
+
+
+.white-popup-block .popup-modal-dismiss {
+	text-decoration: none;
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 110%;
+	color: #000000;
+	border-radius: 5px;
+	padding: 15px 35px 11px;
+	border: 1px solid #09B580;
+	box-sizing: border-box;
+	display: inline-block;
+	transition: .2s ease-out;
+}
+
+.white-popup-block .popup-modal-confirm {
+	background: linear-gradient(180deg, #08B67D 0%, #119BAC 100%), #249BB9;
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 110%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 15px 35px 11px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-right: 10px;
+	transition: .2s ease-out;
+}
+
+.white-popup-block .popup-modal-confirm:hover {
+	background: #119BAC;
+}
+
+.white-popup-block .popup-modal-dismiss:hover {
+	background: rgba(9, 181, 128, .1);
+}
+
+#login-popup,
+#register-popup,
+#forgot-popup,
+#congrat-popup {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 5px;
+	max-width: 400px;
+}
+
+#login-popup .title,
+#register-popup .title,
+#forgot-popup .title,
+#congrat-popup .title {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 110%;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+#login-popup .title:after,
+#register-popup .title:after,
+#congrat-popup .title:after,
+#forgot-popup .title:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -15px;
+	height: 2.5px;
+	background: #09B580;
+	left: 0;
+	right: 0;
+}
+
+#forgot-popup .descr {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+#login-popup form,
+#register-popup form,
+#forgot-popup form {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#login-popup label,
+#register-popup label,
+#forgot-popup label {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 5px;
+	display: block;
+	text-align: left;
+}
+
+#login-popup input,
+#register-popup input,
+#forgot-popup input {
+	background: #FFFFFF;
+	border: 1px solid #CECECE;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	display: block;
+	width: 100%;
+	padding: 18px 30px;
+	font-size: 16px;
+}
+
+#login-popup button,
+#register-popup button,
+#forgot-popup button {
+	border: none;
+	width: 100%;
+	cursor: pointer;
+	transition: .2s ease-out;
+}
+
+#login-popup .popup-modal-dismiss,
+#register-popup,
+#forgot-popup {
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#login-popup .forgot {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 110%;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #09B580;
+	transition: .2s ease-out;
+}
+
+#login-popup .forgot:hover {
+	color: #119BAC;
+}
+
+#congrat-popup .text {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 110%;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+
+#login-popup,
+#register-popup,
+#congrat-popup,
+#forgot-popup .popup-modal-dismiss {
+	width: 100%;
+}
+
+.text-login {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	text-align: center;
+	color: #000000;
+}
+
+.text-login > a {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 110%;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #09B580;
+}
+
+.descr-reg {
+	font-family: Codec Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 9px;
+	line-height: 110%;
+	text-align: center;
+	color: #000000;
+	margin: 15px 0 20px;
+}
+
+
+
+.checkbox {
+	margin-bottom: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: fixed;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 22px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 19px;
+    width: 19px;
+    background: #D9E3FF;
+    border-radius: 5px;
+    left: 0px;
+    cursor: pointer;
+    top: -3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    
+    left: 4px;
+    top: 2px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+.mfp-close-btn-in .mfp-close {
+	display: none !important;
+}

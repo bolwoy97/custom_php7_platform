@@ -1,0 +1,79 @@
+.btn-default, .btn-default-login {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding:7px 22px !important;
+    color: #1B1B1B !important;
+}
+
+.btn-default-login {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-primary, .btn-primary-width {
+    background: linear-gradient(180deg, #05BB74 0%, #1298AE 100%), #249BB9 ;
+    border-radius: 5px;
+    padding:7px 13px;
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.btn-outline-primary {
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0 rgba(157, 96, 212, 0.5);
+    border: solid 1px transparent;
+    background-image: linear-gradient(180deg, #05BB74 0%, #1298AE 100%), linear-gradient(180deg, #05BB74 0%, #1298AE 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1px 1000px 1px #fff inset;padding:7px 13px !important;
+    font-size: 14px;
+}
+
+.btn-primary-width {
+    width:100%;
+}
+
+.form-inline { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

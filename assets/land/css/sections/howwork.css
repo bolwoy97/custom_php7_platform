@@ -1,0 +1,135 @@
+.howwork {
+    background: url(../../image/bg-problem.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    margin: -110px 0 0 0;
+}
+
+.howwork__wrap {
+    padding:120px 15px 100px 15px;
+}
+
+.howwork__title {
+    color:#fff;
+    padding: 0 15px;
+}
+
+.howwork__title_line {
+    margin: 15px 15px;
+}
+
+.howwork__item_wrap {
+    justify-content: flex-start;
+    align-items: stretch;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row; /*Пункты внутри контейнера будут располагаться горизонтально*/
+    align-items: stretch;
+}
+
+.howwork__item {
+    width: 40% !important;
+    flex-basis: 40% !important;
+    padding: 15px !important;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items:flex-start;
+}
+
+.howwork__item:after{
+    content:'';
+    min-height:inherit;
+    font-size:0;
+}
+
+.howwork__item > div {
+    width:100%;
+}
+
+.howwork__item:nth-child(even) {
+    background-image: url(../../image/min-line-w.png);
+    background-repeat: no-repeat;
+    background-position: -10px 77px;
+}
+
+.howwork__item:nth-child(odd){
+    background-image: url(../../image/min-line-w.png);
+    background-repeat: no-repeat;
+    background-position: right -10px top 77px;
+}
+
+.howwork__item:last-child {
+    background-image: none;
+    margin:0 auto;
+}
+
+.howwork__item_img {
+    color:#000;
+    background: #fff;
+    border-radius: 20px;
+    min-height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howwork__item_img img {
+    width: 70px;
+}
+
+.howwork__item_desc {
+    margin: 15px 0;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1240px) {
+    .howwork__item {
+        width: calc(100% / 8) !important;
+        flex-basis: calc(100% / 9) !important;
+        padding: 15px !important;
+        text-align: center;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        align-items:flex-start;
+         flex: 1;
+    }
+    .howwork__item_wrap {
+        display: flex !important;
+        flex-direction: row !important; /*Пункты внутри контейнера будут располагаться горизонтально*/
+        align-items: stretch !important;
+    }
+    .howwork__item:nth-child(odd), .howwork__item:nth-child(even) {
+        background-image: url(../../image/min-line-w.png), url(../../image/min-line-w.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: -5% 80px, 105% 80px;
+    }
+    .howwork__item:first-child {
+        background-image: url(../../image/min-line-w.png);
+        background-repeat: no-repeat;
+        background-position: 105% 80px;
+        margin:0;
+    }
+    .howwork__item:last-child {
+        background-image: url(../../image/min-line-w.png);
+        background-repeat: no-repeat;
+        background-position: -5% 80px;
+        margin:0;
+    }
+}

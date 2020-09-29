@@ -1,0 +1,11 @@
+.DS_Store
+
+staff/*
+
+upload/*
+!upload/log/.gitkeep 
+!upload/news/.gitkeep
+!upload/verification/.gitkeep
+!upload/.gitkeep
+
+components/ENV.php
